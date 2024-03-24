@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style/reset.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <title>Alura DEV</title>
+</head>
+<body>
+    <header>
+            <div class="logo-area">
+                <img src="/assets/images/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="search-area">
+                <input type="text" placeholder="Busque por algo" class="search-area-input">
+            </div>
+            <div class="user-area">
+                <div class="user-img"><img src="/assets/images/profilepic.jpeg" alt="Profile picture" class="avatar"></div>
+                <div class="username">Kakashi</div>
+                <div class="search-mobile">
+                    <img src="/assets/images/search.png" alt="Search Ico" class="search-ico">
+                </div>
+                <div class="menu-hamburguer">
+                    <img src="/assets/images/menu_hamburguer.png" alt="menu-hamburguer" class="menu-hamburguer-img">
+                </div>
+            </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h2>MENU</h2>
+            <div class="editor">
+                <img src="/assets/images/edit_ico.png" alt="Ícone de editor">
+                <span class="nav-text">Editor de código</span>
+            </div>
+            <div class="community">
+                <img src="/assets/images/comunity_ico.png" alt="Ícone de comunidade">
+                <span class="nav-text">Comunidade</span>
+            </div>
+        </nav>
+
+        <div class="editor-area">
+            <section class="editor-area-total">
+                <div class="editor-area-container">
+                    <div class="editor-icons">
+                        <div class="red-circle"></div>
+                        <div class="yellow-circle"></div>
+                        <div class="green-circle"></div>
+                    </div>
+                    <textarea class="editor-area-input"></textarea>
+                </div>
+            </section>
+            <button class="highlight-button">Visualizar com highlight</button>
+        </div>            
+            
+            <div class="editor-area-infos-project">
+                <h2>SEU PROJETO</h2>
+                <input type="text" class="project-title" placeholder="Nome do seu projeto">
+                <textarea placeholder="Descrição do seu projeto" name="Descrição projeto"cols="30" rows="10" class="project-description"></textarea>
+                <label for="linguagem">PERSONALIZAÇÃO</label>
+                <select id="linguagem" class="languages-menu">
+                    <option value="javascript">JavaScript</option>
+                    <option value="css">CSS</option>
+                    <option value="html">HTML</option>
+                </select>
+                <input type="color" class="editor-color">
+                <input type="submit" value="Salvar projeto" class="submit-project">
+            </div>
+    </div>
+
+</body>
+</html>
