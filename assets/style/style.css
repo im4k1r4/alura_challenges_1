@@ -166,13 +166,15 @@ nav h2 {
     background-color: var(--mac-green);
 }
 
-.editor-area-input {
+.preview {
+    color: var(--white);
     border: none;
-    resize: none;
     outline: none;
     padding: 20px;
     background-color: var(--black);
     height: 234px;
+    white-space: pre-wrap;
+    overflow: auto;
 }
 
 .editor-area-infos-project {
