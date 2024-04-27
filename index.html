@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style/reset.css">
+    <link rel="stylesheet" href="/assets/style/dracula.css">
     <link rel="stylesheet" href="/assets/style/style.css">
     <title>Alura DEV</title>
 </head>
@@ -51,7 +52,13 @@
                         <div class="yellow-circle"></div>
                         <div class="green-circle"></div>
                     </div>
-                    <textarea class="editor-area-input"></textarea>
+                    <pre><code class="editor-area-input" contenteditable="true" aria-label="Editor de código">fetch('https://api.example.com/data')
+
+                        .then(response => response.json())
+                     
+                        .then(data => console.log(data))
+                     
+                        .catch(error => console.error('Erro:', error));</code></pre>
                 </div>
             </section>
             <button class="highlight-button">Visualizar com highlight</button>
@@ -71,6 +78,7 @@
                 <input type="submit" value="Salvar projeto" class="submit-project">
             </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
