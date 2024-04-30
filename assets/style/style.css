@@ -86,6 +86,14 @@ header {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.editor {
+    cursor: pointer;
+}
+
+.community {
+    cursor: pointer;
+}
+
 nav {
     margin-left: 32px;
     display: inline-block;
