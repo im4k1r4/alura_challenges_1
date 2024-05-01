@@ -1,5 +1,6 @@
 :root {
     --dark-blue: #051D3B;
+    --community-blue: #041832;
     --purple-blue: #5081FB;
     --selection-blue: #0B254A;
     --gray-blue: #2D415A;
@@ -22,6 +23,10 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 32px;
+}
+
+a {
+    text-decoration: none; 
 }
 
 .logo {
@@ -264,6 +269,103 @@ nav h2 {
     border-radius: 10px;
     width: calc(272px - 12px);
     height: 56px;
+}
+
+/* Página comunidade.html */
+
+.container-comunidade {
+    display: flex;
+    align-items: start;
+    gap: 100px
+}
+
+/*.container-comunidade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 24px;
+}
+*/
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; 
+    color: var(--white);
+}
+
+.editor-area-comunidade {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--community-blue);
+    box-sizing: border-box;
+    width: 520px;
+    height: 464px;
+    border-radius: 10px;
+}
+
+.editor-area-total-comunidade {
+    box-sizing: border-box;
+    background-color: #6BD1FF;
+    border-radius: 12px;
+    width: 520px;
+    height: 288px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editor-area-container-comunidade {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 472px;
+    height: 240px;
+}
+
+.dados-projeto-comunidade {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.titulo-comunidade {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.descricao-comunidade {
+    font-size: 14px;
+}
+
+.social-comunidade {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.comentarios-likes {
+    display: flex;
+    align-items: center;
+}
+
+.comentarios-likes .coments-icon, .like-icon {
+    margin-right: 8px; 
+}
+
+.comentarios-likes .numero-comentarios {
+    margin-right: 16px; 
+}
+
+.user-comunidade {
+    display: flex;
+    align-items: center;
+}
+
+.user-comunidade-avatar {
+    width: 24px;
+    border-radius: 100%;
+    margin-right: 8px;
 }
 
 /* Laptop */
